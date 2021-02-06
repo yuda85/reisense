@@ -879,6 +879,13 @@ header #st-logo img {
   display: inline-block;
   margin-top: 46px;
 }
+.about-images .image-center img {
+  width: 407px;
+}
+.about-images .image-left img,
+.about-images .image-right img {
+  width: 366px;
+}
 
 .about-images .image-left {
   margin-right: 170px;
@@ -1004,6 +1011,9 @@ header #st-logo img {
 .service-content .service-image,
 .service-content .right {
   display: inline-block;
+}
+.service-content .service-image img {
+  width: 100%;
 }
 
 .service-content .left,
@@ -2099,6 +2109,9 @@ footer p a {
   .about-images .image-center {
     width: 360px;
     bottom: 80px;
+  }
+  .about-images img {
+    max-width: 100%;
   }
 
   .about-images .image-center img {
