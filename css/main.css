@@ -1869,7 +1869,7 @@ textarea:focus {
 }
 
 .small-agency-home-header-bg::after {
-	background: #fff url(../images/banner/banner-round-img-2.jpg) center center no-repeat;
+	background: #fff url(../images/banner/images/cover.jpg) center center no-repeat;
 	background-size: cover;
 	background-position: calc(100% - 120px) 394px;
 	top: -46%;
@@ -2300,7 +2300,7 @@ h1 {
 	border-top-right-radius: 350px;
 	border-bottom-right-radius: 350px;
 	background-color: #fff;
-	background-image: url(../images/about-img.png);
+	background-image: url(../images/appointments.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
