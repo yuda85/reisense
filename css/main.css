@@ -40,6 +40,34 @@ Date Created: July 16, 2018
 -------------------------------------- -- */
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:200,300,300i,400,400i,500,500i,600,700,800,900|Hind+Vadodara:300,400,500,600,700");
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('./fonts/Cocogoose.woff2') format('woff2'),
+        url('./fonts/Cocogoose.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('./fonts/Cocogoose-Light.woff2') format('woff2'),
+        url('./fonts/Cocogoose-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('./fonts/CocogoosePro-Thin.woff2') format('woff2'),
+        url('./fonts/CocogoosePro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* -- Custom Animations
 ------------------------------------------  -- */
 
@@ -99,6 +127,14 @@ Date Created: July 16, 2018
 
 /* Classes for colors */
 
+.reisense {
+	font-family: Cocogoose;
+	font-weight: 500;
+}
+.reisense .light{
+	font-family: Cocogoose;
+	font-weight: 300;
+}
 .theme-color-a {
 	color: #af46fc;
 }
@@ -2066,6 +2102,40 @@ h1 {
 	text-decoration: none;
 }
 
+
+
+
+
+.content-block:hover .coming-soon{
+	opacity:1;
+	filter: blur(0px);
+}
+
+.content-block.coming-soon-container {
+	position: relative;
+}
+
+.content-block.coming-soon-container:hover * {
+	transition: 0.2s all ease;
+	filter: blur(4px);
+}
+.content-block .coming-soon{
+	filter: blur(44px);
+	z-index: 3;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 131px;
+    left: 6px;
+    font-size: 60px;
+    transform: rotate(45deg);
+    z-index: 2;
+    opacity: 0;
+    font-weight: 700;
+    line-height: 1;
+    filter: blur(0px) !important;
+}
+
+
 .content-block:hover .icon-container i {
 	color: #fff;
 }
@@ -3654,6 +3724,7 @@ h1 {
 	-o-transition: all .5s;
 	transition: all .5s;
 	color: #69798d;
+	font-size: 20px;
 }
 
 .small-agency-footer .footer-bottom p a:hover {
