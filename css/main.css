@@ -40,6 +40,34 @@ Date Created: July 16, 2018
 -------------------------------------- -- */
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:200,300,300i,400,400i,500,500i,600,700,800,900|Hind+Vadodara:300,400,500,600,700");
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('./fonts/Cocogoose.woff2') format('woff2'),
+        url('./fonts/Cocogoose.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('./fonts/Cocogoose-Light.woff2') format('woff2'),
+        url('./fonts/Cocogoose-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('CocogoosePro-Thin.woff2') format('woff2'),
+        url('CocogoosePro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* -- Custom Animations
 ------------------------------------------  -- */
 
@@ -99,6 +127,14 @@ Date Created: July 16, 2018
 
 /* Classes for colors */
 
+.reisense {
+	font-family: Cocogoose;
+	font-weight: 500;
+}
+.reisense .light{
+	font-family: Cocogoose;
+	font-weight: 100;
+}
 .theme-color-a {
 	color: #af46fc;
 }
