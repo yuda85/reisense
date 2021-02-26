@@ -61,8 +61,8 @@ Date Created: July 16, 2018
 
 @font-face {
     font-family: 'Cocogoose';
-    src: url('CocogoosePro-Thin.woff2') format('woff2'),
-        url('CocogoosePro-Thin.woff') format('woff');
+    src: url('./fonts/CocogoosePro-Thin.woff2') format('woff2'),
+        url('./fonts/CocogoosePro-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -133,7 +133,7 @@ Date Created: July 16, 2018
 }
 .reisense .light{
 	font-family: Cocogoose;
-	font-weight: 100;
+	font-weight: 300;
 }
 .theme-color-a {
 	color: #af46fc;
@@ -2102,6 +2102,40 @@ h1 {
 	text-decoration: none;
 }
 
+
+
+
+
+.content-block:hover .coming-soon{
+	opacity:1;
+	filter: blur(0px);
+}
+
+.content-block.coming-soon-container {
+	position: relative;
+}
+
+.content-block.coming-soon-container:hover * {
+	transition: 0.2s all ease;
+	filter: blur(4px);
+}
+.content-block .coming-soon{
+	filter: blur(44px);
+	z-index: 3;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 131px;
+    left: 6px;
+    font-size: 60px;
+    transform: rotate(45deg);
+    z-index: 2;
+    opacity: 0;
+    font-weight: 700;
+    line-height: 1;
+    filter: blur(0px) !important;
+}
+
+
 .content-block:hover .icon-container i {
 	color: #fff;
 }
@@ -3690,6 +3724,7 @@ h1 {
 	-o-transition: all .5s;
 	transition: all .5s;
 	color: #69798d;
+	font-size: 20px;
 }
 
 .small-agency-footer .footer-bottom p a:hover {
